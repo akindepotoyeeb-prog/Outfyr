@@ -20,7 +20,7 @@ export default function SignUp() {
           type="text"
           name=""
           id=""
-          className="bg-[#9e9d9d] p-2 mb-3 rounded w-full outline-none mt-1 animate-slideIn"
+          className="bg-[#9e9d9d] p-2 mb-3 rounded w-full text-black outline-none mt-1 animate-slideIn"
         />
         <label htmlFor="" className="">
           Email
@@ -29,7 +29,7 @@ export default function SignUp() {
           type="email"
           name=""
           id=""
-          className="bg-[#9e9d9d] p-2 mb-2 rounded w-full outline-none mt-1 animate-slideIn"
+          className="bg-[#9e9d9d] p-2 mb-2 rounded w-full text-black outline-none mt-1 animate-slideIn"
         />
         <label htmlFor="" className="">
           Password
@@ -39,7 +39,7 @@ export default function SignUp() {
             type="password"
             name=""
             id=""
-            className="bg-[#9e9d9d] p-2 mb-2 rounded w-full outline-none mt-1 animate-slideIn"
+            className="bg-[#9e9d9d] p-2 mb-2 rounded w-full text-black outline-none mt-1 animate-slideIn"
           />
           <div className="absolute top-1/2 -translate-y-1/2 right-3 z-10 text-[#000000]"><FaEyeSlash /></div>
         </div>
