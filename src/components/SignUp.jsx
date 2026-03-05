@@ -3,10 +3,11 @@ import { FaApple } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router";
 
 export default function SignUp() {
   return (
-    <div className="h-screen py-10 px-5">
+    <div className="h-screen py-10 px-5 max-w-md mx-auto">
       <div className="mb-6 text-center">
         <h1 className="text-3xl mb-2.5">Create Account</h1>
         <p className="">Join OUTFYT and start shopping smarter today.</p>
@@ -19,7 +20,7 @@ export default function SignUp() {
           type="text"
           name=""
           id=""
-          className="bg-[#9e9d9d] p-2 mb-3 rounded w-full outline-none mt-1"
+          className="bg-[#9e9d9d] p-2 mb-3 rounded w-full outline-none mt-1 animate-slideIn"
         />
         <label htmlFor="" className="">
           Email
@@ -28,7 +29,7 @@ export default function SignUp() {
           type="email"
           name=""
           id=""
-          className="bg-[#9e9d9d] p-2 mb-2 rounded w-full outline-none mt-1"
+          className="bg-[#9e9d9d] p-2 mb-2 rounded w-full outline-none mt-1 animate-slideIn"
         />
         <label htmlFor="" className="">
           Password
@@ -38,7 +39,7 @@ export default function SignUp() {
             type="password"
             name=""
             id=""
-            className="bg-[#9e9d9d] p-2 mb-2 rounded w-full outline-none mt-1"
+            className="bg-[#9e9d9d] p-2 mb-2 rounded w-full outline-none mt-1 animate-slideIn"
           />
           <div className="absolute top-1/2 -translate-y-1/2 right-3 z-10 text-[#000000]"><FaEyeSlash /></div>
         </div>
@@ -54,7 +55,7 @@ export default function SignUp() {
           </label>
         </div>
 
-        <button type="submit" className="bg-[#e48045] w-full p-2 rounded mt-10">
+        <button type="submit" className="bg-[#e48045] w-full p-2 rounded mt-10 animate-scaleout">
           Sign Up
         </button>
       </form>
@@ -81,7 +82,7 @@ export default function SignUp() {
           </a>
         </div>
       </div>
-      <div className="text-center mt-4 font-medium"><p>Already have an account? <a href="./SignIn.jsx" className="text-[#e48045] ">Sign in</a></p></div>
+      <div className="text-center mt-4 font-medium"><p>Already have an account? <Link to="/signin" className="text-[#e48045] ">Sign in</Link></p></div>
     </div>
   );
 }
